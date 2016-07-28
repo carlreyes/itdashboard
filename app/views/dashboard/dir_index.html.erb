@@ -1,0 +1,7 @@
+<h1>Director Dashboard</h1>
+
+<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+
+<% @work_orders.each do |wo| %>
+  <%= wo.title %>
+<% end %>
